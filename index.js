@@ -70,3 +70,7 @@ statusCodes[exports.USE_PROXY = 305] = "Use Proxy";
 exports.getStatusText = function(statusCode) {
   if (statusCodes.hasOwnProperty(statusCode)) return statusCodes[statusCode];
 };
+
+exports.getStatus = function(statusCode) {
+  if (statusCodes.hasOwnProperty(statusCode)) return statusCode;
+};
